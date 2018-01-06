@@ -2,17 +2,20 @@ from tkinter import *
 import backend
 
 def get_selected_row(event):   #the "event" parameter is needed b/c we've binded this function to the listbox
-    index = list1.curselection()[0]
-    global selected_tuple
-    selected_tuple = list1.get(index)
-    e1.delete(0,END)
-    e1.insert(END,selected_tuple[1])
-    e2.delete(0, END)
-    e2.insert(END,selected_tuple[2])
-    e3.delete(0, END)
-    e3.insert(END,selected_tuple[3])
-    e4.delete(0, END)
-    e4.insert(END,selected_tuple[4])
+    try:
+        index = list1.curselection()[0]
+        global selected_tuple
+        selected_tuple = list1.get(index)
+        e1.delete(0,END)
+        e1.insert(END,selected_tuple[1])
+        e2.delete(0, END)
+        e2.insert(END,selected_tuple[2])
+        e3.delete(0, END)
+        e3.insert(END,selected_tuple[3])
+        e4.delete(0, END)
+        e4.insert(END,selected_tuple[4])
+    except IndexError:
+        pass                #in the case where the listbox is empty, the code will not execute
 
 def view_command():
     list1.delete(0, END)  # make sure we've cleared all entries in the listbox every time we press the View all button

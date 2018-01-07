@@ -38,6 +38,3 @@ class Database:
     #destructor-->now we close the connection the our database here
     def __del__(self):
         self.conn.close()
-#insert("another novel", "James W.", 2017, 1234)
-#update(2, title = "new book", author= "DH", year= 2005, isbn= 5555)
-#print(view())

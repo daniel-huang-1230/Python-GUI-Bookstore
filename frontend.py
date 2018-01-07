@@ -96,7 +96,7 @@ class Window(object):
         self.list1.delete(0, END)
         self.list1.insert(END, (self.title_text.get(), self.author_text.get(), self.year_text.get(), self.ISBN_text.get()))
 
-    def delete_command(slef):
+    def delete_command(self):
         database.delete(self.selected_tuple[0])
         self.view_command()
 

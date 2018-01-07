@@ -35,6 +35,6 @@ class Database:
         self.cur.execute("UPDATE book SET title = ?, author = ?, year = ?, isbn = ? WHERE id = ?", (title, author, year, isbn, id))
         self.conn.commit()
 
-    #destructor-->now we close the connection the our database here
+    #destructor-->now we close the connection to our database here
     def __del__(self):
         self.conn.close()

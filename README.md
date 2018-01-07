@@ -16,7 +16,8 @@ For the standalone executable, please see the **app folder** and look for file n
 
 <img width="1764" alt="2018-01-06 06 18 21 pm" src="https://user-images.githubusercontent.com/19476654/34646010-e6d7003a-f311-11e7-9d4f-5aaf68bf16b3.png">
 
-
+<img width="541" alt="2018-01-06 06 56 01 pm" src="https://user-images.githubusercontent.com/19476654/34646061-5b5ff55a-f313-11e7-96a1-4109b6b24e24.png">
+ 
 
 # Author 
 
